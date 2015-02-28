@@ -44,7 +44,7 @@
 extern int	getdents(int, struct dirent *, size_t);
 #elif defined	(__GLIBC__) || defined (__FreeBSD__) || defined (_AIX) || \
 	defined (__NetBSD__) || defined (__OpenBSD__) || \
-	defined (__DragonFly__) || defined (__APPLE__)
+	defined (__DragonFly__) || defined (__APPLE__) || defined (__HAIKU__)
 #include	<dirent.h>
 #define	getdents(a, b, c)	getdirentries((a), (char *)(b), (c), &(db->g_offs))
 #if defined (__FreeBSD__) || defined (__NetBSD__) || defined (__OpenBSD__) || \
