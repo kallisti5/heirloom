@@ -1,7 +1,7 @@
 SHELL = /bin/sh
 
 SUBDIRS = build libwchar libcommon libuxre _install \
-	awk banner basename bc bdiff bfs \
+	banner basename bc bdiff bfs \
 	cal calendar cat chmod chown \
 	cksum cmp col comm copy cp cpio csplit cut \
 	date dc dd deroff diff diff3 dircmp dirname df du \
