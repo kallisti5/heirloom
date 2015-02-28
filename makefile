@@ -1,21 +1,23 @@
 SHELL = /bin/sh
 
 SUBDIRS = build libwchar libcommon libuxre _install \
-	banner basename bc bdiff bfs \
+	awk banner basename bc bdiff bfs \
 	cal calendar cat chmod chown \
 	cksum cmp col comm copy cp cpio csplit cut \
 	date dc dd deroff diff diff3 dircmp dirname df du \
 	echo ed env expand expr \
 	factor file find fmt fmtmsg fold \
 	getconf getopt grep groups hd head hostname id join \
-	kill line listusers ln logins logname ls \
-	mail man mesg mkdir mkfifo mknod more mvdir \
+	kill line listusers ln logins logname \
+	mail man mesg mkdir mkfifo mknod mvdir \
 	nawk news nice nl nohup oawk od \
-	paste pathchk pg pgrep pr printenv printf priocntl ps psrinfo pwd \
+	paste pathchk pgrep pr printenv printf priocntl ps psrinfo pwd \
 	random renice rm rmdir \
 	sdiff sed setpgrp shl sleep sort spell split stty su sum sync \
-	tabs tail tapecntl tar tcopy tee test time touch tr true tsort tty \
-	ul uname uniq units users wc what who whoami whodo xargs yes
+	tail tapecntl tar tcopy tee test time touch tr true tsort tty \
+	uname uniq units users wc what who whoami whodo xargs yes
+
+DISABLED = ls more pg tabs ul
 
 dummy: makefiles all
 
